@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0000"
+            android:paddingHorizontal="7dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#0000"/>
+
+            <TextView
+                android:id="@+id/ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c1b9e7de"
+                android:padding="8dp"
+                android:text="Question"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColor="#1d1b1b"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a9d2eae5"
+                    android:padding="8dp"
+                    android:textSize="19sp"
+                    android:textStyle="italic"
+                    android:text="Answer" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

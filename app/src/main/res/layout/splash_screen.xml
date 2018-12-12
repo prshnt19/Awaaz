@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5df1f1" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imgLogo"
+        android:textSize="30sp"
+        android:textColor="#060404"
+        android:text="AWAAZ"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:text="Raise your Voice..."
+        android:layout_centerHorizontal="true"
+        android:textColor="#f44206"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:text="Be the Change Maker"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f44206"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        android:textColor="#454545"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Fight To Win" />
+
+</RelativeLayout>

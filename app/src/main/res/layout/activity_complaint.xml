@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pr.f2w.Complaint"
+    android:padding="12dp"
+    android:paddingBottom="1dp"
+    android:background="@drawable/back"
+    >
+
+    <EditText
+        android:id="@+id/complaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Write your complaint here"
+        android:layout_above="@+id/space"
+        android:padding="10dp"
+        android:gravity="top"
+        android:textColor="#5b5b5b"
+        android:background="#31ffffff"
+        android:textColorHint="#653b3b3b"
+        />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_above="@+id/submit"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/submit"
+        android:layout_toStartOf="@id/submit"
+        android:layout_below="@id/space"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:hint="Name (Optional)"
+        android:textColorHint="#653b3b3b"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#993f4b5b"
+        />
+
+</RelativeLayout>
